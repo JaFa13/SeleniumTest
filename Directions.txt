@@ -1,0 +1,34 @@
+*****Specs*****
+Python 2.7
+Selenium 2.53.6
+FireFox 44
+Chrome 52
+
+
+*****Run Directions:*****
+
+Option1:
+Can either run from IDE of choice. Can run customized test suites (suite_preLogin,suite_postLogin)
+
+Option2:
+Execute Windows Batchfiles. (ExecuteChromeTests, ExecuteFireFoxTests)
+
+
+*****Test Case Descriptions:*****
+
+
+1. test_01checkMainPage
+* Used to open up https://hub.docker.com/ page and establish connection.
+  Then checks the Docker copyright to ensure its the correct page.
+
+2. test_02signUP
+*Signs a user up with random generated user name, password, and email and then checks that form was submitted.
+
+3. test_03Login
+*Tests user login with pre exisiting valid user and checks valid user page.
+
+4. test_04FailLogin*
+*Tests the login with an invalid user and ensures that webpage is not loaded.
+
+5. test_05SearchRepository
+*Sumbits a search query for "test" and ensures the request is submitted.
